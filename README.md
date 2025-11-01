@@ -1,56 +1,69 @@
-Task Manager App - MERN Stack
-A full-stack Task Manager application built with MongoDB, Express.js, React, and Node.js that allows users to create, view, update, delete, and filter their daily tasks with a clean, modern UI.
+# 📝 Task Manager App - MERN Stack
 
-✨ Features
-Core Features
-✅ Create new tasks with title and description
-✅ View all tasks in a responsive card layout
-✅ Update task details (title, description, status)
-✅ Delete tasks with confirmation
-✅ Filter tasks by status (All, Pending, Completed)
-✅ Mark tasks as completed/pending
-✅ Form validation for required fields
-✅ Responsive design for desktop and mobile
-✅ Modern UI with Tailwind CSS
-✅ Toast notifications for user feedback
-✅ Visual status indicators (color-coded)
+A **full-stack Task Manager** application built using **MongoDB**, **Express.js**, **React**, and **Node.js (MERN)** that allows users to **create**, **view**, **update**, **delete**, and **filter** their daily tasks with a clean and modern UI.
 
+---
 
-Bonus Features Implemented
-✅ Simple Login Screen - UI-level authentication screen (no backend auth)
-✅ React Context API - Global state management for tasks
-✅ Smooth Animations - Fade effects and transitions
+## ✨ Core Features
 
-Frontend
+- ✅ **Create Tasks:** Add new tasks with a title and description  
+- ✅ **View Tasks:** Responsive card layout for all tasks  
+- ✅ **Update Tasks:** Edit title, description, or status easily  
+- ✅ **Delete Tasks:** Remove tasks with confirmation  
+- ✅ **Filter Tasks:** Filter by status — *All, Pending, Completed*  
+- ✅ **Mark Status:** Mark tasks as *Completed* or *Pending*  
+- ✅ **Form Validation:** Required field checks  
+- ✅ **Responsive Design:** Works seamlessly on desktop & mobile  
+- ✅ **Modern UI:** Built with Tailwind CSS  
+- ✅ **Toast Notifications:** Instant feedback for user actions  
+- ✅ **Visual Indicators:** Color-coded status labels  
 
-React (v19.1.1) - UI library
-Vite - Build tool and development server
-Tailwind CSS (v4.1.16) - Utility-first CSS framework
-Axios (v1.13.1) - HTTP client for API calls
-React Icons (v5.5.0) - Icon library
-React Toastify (v11.0.5) - Toast notifications
+---
 
-Backend
+## 🌟 Bonus Features
 
-Node.js - JavaScript runtime
-Express.js (v5.1.0) - Web framework
-MongoDB - NoSQL database
-Mongoose (v8.19.2) - MongoDB object modeling
-CORS (v2.8.5) - Cross-origin resource sharing
-dotenv (v17.2.3) - Environment variable management
+- 🔐 **Simple Login Screen:** UI-level authentication (no backend auth)  
+- ⚙️ **React Context API:** Global state management for tasks  
+- ✨ **Smooth Animations:** Fade effects & transitions for better UX  
 
+---
 
-📋 Prerequisites
-Before you begin, ensure you have the following installed:
+## 🧩 Tech Stack
 
-Node.js (v16 or higher) - Download
-npm or yarn - Comes with Node.js
-MongoDB - MongoDB Atlas (cloud) or local installation
-Git - Download
+### **Frontend**
+- ⚛️ React (v19.1.1)
+- ⚡ Vite (build tool)
+- 🎨 Tailwind CSS (v4.1.16)
+- 🔗 Axios (v1.13.1)
+- 🔔 React Toastify (v11.0.5)
+- 💎 React Icons (v5.5.0)
 
-🚀 Installation & Setup
-git clone https://github.com/yourusername/task-manager-app.git
-cd task-manager-app
+### **Backend**
+- 🟢 Node.js  
+- 🚀 Express.js (v5.1.0)  
+- 🍃 MongoDB (NoSQL Database)  
+- 🔗 Mongoose (v8.19.2)  
+- 🌍 CORS (v2.8.5)  
+- 🔐 dotenv (v17.2.3)  
+
+---
+
+## ⚙️ Prerequisites
+
+Make sure you have the following installed:
+- [Node.js (v16+)](https://nodejs.org/)
+- npm or yarn  
+- [MongoDB](https://www.mongodb.com/atlas/database) (Atlas or local)
+- [Git](https://git-scm.com/)
+
+---
+
+## 🚀 Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/komalshukla2005/Task_Manager_App.git
+cd Task_Manager_App
 
 2. Backend Setup
 # Navigate to backend directory
@@ -65,6 +78,7 @@ touch .env
 Add the following to your backend/.env file:
 PORT=5000
 MONGODB_URI=mongodb+srv://your-username:your-password@cluster.mongodb.net/taskmanager?retryWrites=true&w=majority
+
 Note: Replace your-username and your-password with your MongoDB credentials.
 
 3. Frontend Setup
