@@ -17,7 +17,7 @@ export default function TaskList() {
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
 
-  // getting task 
+  // getting task
   const loadTasks = async () => {
     try {
       const data = await fetchTasks();
@@ -52,7 +52,7 @@ export default function TaskList() {
       toast.error("Failed to delete task");
     }
   };
-  // Editing and Saving 
+  // Editing and Saving
   const handleSaveEdit = async () => {
     try {
       const data = await editTask(editingTask._id, {
@@ -76,9 +76,11 @@ export default function TaskList() {
       <FilterBar filter={filter} setFilter={setFilter} />
 
       {filtered.length === 0 ? (
-        <p className="text-center text-indigo-200 mt-10">
-          ✨ No tasks yet — add one to get started!
-        </p>
+        <div className="mt-16 text-center bg-white/10 backdrop-blur-md border border-indigo-400/30 text-indigo-200 py-6 px-8 rounded-xl shadow-xl w-fit mx-auto">
+          <p className="text-lg font-medium">
+            ✨ You don’t have any tasks yet — add one to get started!
+          </p>
+        </div>
       ) : (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
           {filtered.map((task) => (
